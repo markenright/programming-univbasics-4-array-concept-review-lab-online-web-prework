@@ -5,11 +5,12 @@ def find_element_index(array, value_to_find)
   while counter < array.length do 
     if array[counter] == value_to_find{
       answer = counter
+      counter += 1
     end
-    return answer
+    
   end    
   
-  return index
+  return answer
 end
 
 def find_max_value(array)
