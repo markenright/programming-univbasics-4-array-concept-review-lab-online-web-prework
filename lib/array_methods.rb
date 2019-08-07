@@ -16,6 +16,18 @@ end
 
 def find_max_value(array)
   # Add your solution here
+  answer = array[0]
+  counter = 0
+  while counter < array.length do 
+    if array[counter] > answer
+      answer = counter
+      
+    end
+    counter += 1
+  end    
+  
+  return answer
+  
 end
 
 def find_min_value(array)
